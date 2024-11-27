@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cảm ơn anh Quân</title>
+    <style>
+        /* Tổng quát */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: #1a1a2e; /* Màu tối hiện đại */
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            padding: 20px;
+            background: linear-gradient(135deg, #16213e, #0f3460);
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            color: #e94560; /* Điểm nhấn màu đỏ */
+            margin-bottom: 20px;
+        }
+
+        .message {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .sub-message {
+            font-size: 1.2rem;
+            color: #00fddc; /* Điểm nhấn màu xanh neon */
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #cccccc;
+        }
+
+        /* Hiệu ứng chữ nổi */
+        .message, .sub-message {
+            text-shadow: 0 0 5px #ffffff, 0 0 10px #00fddc, 0 0 15px #00fddc;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8rem;
+            }
+            .message {
+                font-size: 1.3rem;
+            }
+            .sub-message {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>💻 Lời cảm ơn từ team Dev 💻</h1>
+        </header>
+        <main class="content">
+            <p class="message">Cảm ơn anh Quân đã mời nước! 💧</p>
+            <p class="sub-message">Chúc anh luôn tràn đầy năng lượng để tiếp tục "mời nước" và thành công trong công việc! 🚀</p>
+        </main>
+        <footer class="footer">
+            <p>© 2024 - Team Dev sáng tạo</p>
+        </footer>
+    </div>
+    <script>
+        // Hiệu ứng ánh sáng thay đổi khi hover vào container
+        document.querySelector('.container').addEventListener('mouseover', function () {
+            this.style.boxShadow = '0 10px 30px rgba(255, 255, 255, 0.6)';
+        });
+
+        document.querySelector('.container').addEventListener('mouseout', function () {
+            this.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.5)';
+        });
+    </script>
+</body>
+</html>
